@@ -17,7 +17,7 @@ And finally, nthings.ipynb is a Jupyter notebook for analyzing the files under d
 ## Medium.com 
 
 Medium is a blogging platform containing millions of posts. 
-You can search for posts, users, tags and publication by entering a search term. A search will give maximum 1000 results, split in chunks of 10, which are revealed by scrolling down. A search will lead you to a URL like this
+You can search for posts, users, tags and publication by entering a search term. A search will give maximum 1000 results, split in chunks of 10, which are revealed by scrolling down. A search with the string "github features" will lead you to a URL like this
 
 https://medium.com/search?q=github%20features
 
@@ -29,7 +29,7 @@ It will return a json string, that is preceded by the following string (for secu
 
 Alternatively, ***all*** posts etc. could theoretically be found by parsing https://medium.com/sitemap/sitemap.xml.
 That contains a list of xml files: new posts, users, tags and publication, one xml file for each day.
-The xml file for a specific day of for examples posts contains the url's of all new posts from that day.
+The xml file for a specific day of for examples posts contains the url's of all new posts from that day, etc.
 
 
 ## Spiders
@@ -43,7 +43,7 @@ scrapy crawl medium -a searchString=<mySearchString> -a fileName=<myFileName>
 The parameter fileName is optional, default is ./out.csv.
 
 This scrapy command will search for articles on medium.com with titles matching the searchString.
-Results are appeneded to fileName. For each found article a line will be written:
+Results are appended to fileName. For each found article a line will be written:
 ```
 searchString,id,title,createdAt,firstPublishedAt,readingTime,wordCount,totalClapCount
 ```
@@ -57,11 +57,11 @@ The spider PublicationXmlSpider, with name = 'publicationxml', is similar to Med
 
 ## main.py
 
-Contains code to iterate over search terms and execute corresponding scrapy request.
+Contains code to iterate over search terms and execute corresponding scrapy request. 
 
 ## Data
 
-There are the following files under the data directory:
+The files under the data directory are the output of the scrapy calls in main.py.
 ```
 different_kind_of_things.csv
 different_kind_of_adjective_things.csv
