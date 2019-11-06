@@ -55,6 +55,10 @@ This spider could run a long time (weeks or months).
 
 The spider PublicationXmlSpider, with name = 'publicationxml', is similar to MediumXmlSpider. It will parse the xml files for the main publications on Medium that have their own domain.  
 
+## main.py
+
+Contains code to iterate over search terms and execute corresponding scrapy request.
+
 ## Data
 
 There are the following files under the data directory:
