@@ -52,13 +52,4 @@ The spider MediumXmlSpider, with name = 'mediumxml', can be used to parse the xm
 **Warning** 
 This spider could run a long time (weeks). 
 
-The spider PublicationXmlSpider, with name = 'publicationxml', is similar to MediumXmlSpider. It will parse the xml files for the main publications on Medium that have their own domain (
-'https://medium.economist.com/'
-'https://blog.coinbase.com/'
-'https://uxdesign.cc/'
-'https://thinkgrowth.org/'
-'https://uxplanet.org/'
-'https://blog.producthunt.com/'
-'https://towardsdatascience.com/'
-'https://byrslf.co/')
-
+The spider PublicationXmlSpider, with name = 'publicationxml', is similar to MediumXmlSpider. It will parse the xml files for the main publications on Medium that have their own domain.  
