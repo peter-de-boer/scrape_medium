@@ -4,8 +4,9 @@ This repository contains scripts to scrape the website medium.com and to analyze
 
 ## Contents overview
 
-It contains a scrapy project. For information on scrapy, see for example https://docs.scrapy.org/en/latest/intro/tutorial.html
-The main file under the scrape_medium is scrape_medium/spiders/medium.py. 
+The main part of this rep is a scrapy project.
+For information on scrapy, see for example https://docs.scrapy.org/en/latest/intro/tutorial.html
+The main file (containing the spiders) is: scrape_medium/spiders/medium.py. 
 
 The file main.py contains code to execute several scrapy commands.
 
@@ -53,3 +54,24 @@ The spider MediumXmlSpider, with name = 'mediumxml', can be used to parse the xm
 This spider could run a long time (weeks). 
 
 The spider PublicationXmlSpider, with name = 'publicationxml', is similar to MediumXmlSpider. It will parse the xml files for the main publications on Medium that have their own domain.  
+
+## Data
+
+There are the following files under the data directory:
+
+different_kind_of_things.csv
+different_kind_of_adjective_things.csv
+different_kind_of_things_words.csv
+
+The first file contains a list of articles with "1 thing", "2 things", ..., "1 lesson", "2 lessons", ... etc in the title.
+The second file contains a list of articles with "1 easy thing", "2 easy things", ..., "1 practical thing", ..., etc. in the title.
+In both files, the numbers go up to 1015.
+The third file contains a list of articles with "one thing", "two things", ..., "one lesson", "two lessons", ... etc in the title.
+In this file, the number goes up to twenty. 
+
+## Jupyter notebook
+
+The notebook reads in the files, converts the data to dataframes, and caluclates a few statistics.
+
+
+
