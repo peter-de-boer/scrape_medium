@@ -57,7 +57,7 @@ The spider PublicationXmlSpider, with name = 'publicationxml', is similar to Med
 
 ## main.py
 
-Contains code to iterate over search terms and execute corresponding scrapy request. 
+Contains code to iterate over search terms and execute corresponding scrapy requests. 
 
 ## Data
 
@@ -75,7 +75,7 @@ In this file, the number goes up to twenty.
 
 ## Jupyter notebook
 
-The notebook reads in the files, converts the data to dataframes, and caluclates a few statistics.
+The notebook nthings.ipynb reads in the files, converts the data to dataframes, and caluclates a few statistics.
 
 
 
