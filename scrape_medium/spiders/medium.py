@@ -56,26 +56,11 @@ class MediumSpider(scrapy.Spider):
         # 10 results at once), subsequent scrapy request need to be executed.
         # This needs to be done by POST request though.
         # For those requests, a header needs to be sent.
-        # We need to define the header only once. 
+        # We need to define the header only once.
         # The folllowing is basically copied from the header info in Network Tab in Developer tools
         # in Chrome while browsing medium.com.
 
-        self.headers= { \
-        "sec-fetch-mode": "cors", \
-        "origin": "https://medium.com", \
-        "x-xsrf-token": "vbEzCL15XzVC", \
-        "accept-language": \
-            "en-US,en;q=0.9,de-AT;q=0.8,de;q=0.7,de-DE;q=0.6,nl;q=0.5,es;q=0.4", \
-        "accept-encoding": "gzip, deflate, br", \
-        "cookie": "__cfduid=d3cc845f3f167fb63f8ca64fdc5f214f51560932149; _ga=GA1.2.1982895133.1560932155; __stripe_mid=41d95cf0-513f-4623-b6e5-e32867d19757; uid=25e7d18c75b9; sid=1:sP5AuhHVHKNKcpU8tMTupiMDHNrGseuF0wZvzyF0ZiAc2FT6WGB66hGRzN8Nm+os; optimizelyEndUserId=25e7d18c75b9; lightstep_guid/medium-web=922d1a53bf8cdd76; lightstep_session_id=1985aa6824cab905; pr=1.25; tz=-120; lightstep_guid/lite-web=6f7d7a6542eccee4; _gid=GA1.2.357840978.1571076496; __cfruid=e73584466eb030d65d3266fea1dd8944eeba9f14-1571204694; xsrf=vbEzCL15XzVC; _parsely_session=^{^%^22sid^%^22:133^%^2C^%^22surl^%^22:^%^22https://medium.com/search/posts?q=Data^%^2520Science^%^22^%^2C^%^22sref^%^22:^%^22^%^22^%^2C^%^22sts^%^22:1571229069643^%^2C^%^22slts^%^22:1571224266008^}; _parsely_visitor=^{^%^22id^%^22:^%^22pid=0c5fb18c784e8df58bf0fa958c15b102^%^22^%^2C^%^22session_count^%^22:133^%^2C^%^22last_session_ts^%^22:1571229069643^}; sz=1055", \
-        "x-obvious-cid": "web", \
-        "x-client-date": "1571234072652", \
-        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36", \
-        "content-type": "application/json", \
-        "accept": "application/json", \
-        "referer": "https://medium.com/search?q=Data^%^20Science", \
-        "authority": "medium.com", \
-        "sec-fetch-site": "same-origin"}
+        self.headers= {}
 
 
         # open file for appending
