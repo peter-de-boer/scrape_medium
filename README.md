@@ -1,6 +1,8 @@
 # scrape_medium
 
-This repository contains scripts to scrape the website medium.com and to analyze the results.
+This repository contains scripts to scrape the website medium.com and to analyze the results. 
+I have written an article based on these results:
+https://medium.com/@peterdb001/just-do-3-12-or-371-things-and-all-your-problems-are-solved-ad22911314a3
 
 ## Contents overview
 
